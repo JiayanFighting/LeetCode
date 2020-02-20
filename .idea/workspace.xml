@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df0a0af2-a5c8-429a-b023-79f039d76558" name="Default Changelist" comment="" />
+    <list default="true" id="df0a0af2-a5c8-429a-b023-79f039d76558" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_132.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_132.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UQpvw5O3djERvNzWBI2khKbxaD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -38,14 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.code_132">
-    <configuration name="code_124" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code_124" />
-      <module name="leetcode_1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.code_233">
     <configuration name="code_131" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="code_131" />
       <module name="leetcode_1" />
@@ -60,15 +62,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="code_69" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code_69" />
+    <configuration name="code_153" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code_153" />
       <module name="leetcode_1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="code_82" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code_82" />
+    <configuration name="code_154" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code_154" />
+      <module name="leetcode_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_233" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code_233" />
       <module name="leetcode_1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.code_233" />
+        <item itemvalue="Application.code_154" />
+        <item itemvalue="Application.code_153" />
         <item itemvalue="Application.code_132" />
         <item itemvalue="Application.code_131" />
-        <item itemvalue="Application.code_124" />
-        <item itemvalue="Application.code_82" />
-        <item itemvalue="Application.code_69" />
       </list>
     </recent_temporary>
   </component>
@@ -133,54 +142,58 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="96" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581593283770">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="96" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1581593283770" />
     <state x="429" y="270" width="421" height="224" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580645438149">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="429" y="270" width="421" height="224" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1580645438149" />
-    <state x="421" y="139" key="FileChooserDialogImpl" timestamp="1580640229291">
+    <state x="421" y="139" key="FileChooserDialogImpl" timestamp="1581593088848">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="421" y="139" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1580640229291" />
-    <state width="1238" height="236" key="GridCell.Tab.0.bottom" timestamp="1581342551886">
+    <state x="421" y="139" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1581593088848" />
+    <state width="1238" height="236" key="GridCell.Tab.0.bottom" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1581342551886" />
-    <state width="1238" height="236" key="GridCell.Tab.0.center" timestamp="1581342551886">
+    <state width="1238" height="236" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.0.center" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1581342551886" />
-    <state width="1238" height="236" key="GridCell.Tab.0.left" timestamp="1581342551886">
+    <state width="1238" height="236" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.0.left" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1581342551886" />
-    <state width="1238" height="236" key="GridCell.Tab.0.right" timestamp="1581342551886">
+    <state width="1238" height="236" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.0.right" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1581342551886" />
-    <state width="1238" height="236" key="GridCell.Tab.1.bottom" timestamp="1581342551887">
+    <state width="1238" height="236" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.1.bottom" timestamp="1582035243508">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1581342551887" />
-    <state width="1238" height="236" key="GridCell.Tab.1.center" timestamp="1581342551887">
+    <state width="1238" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1582035243508" />
+    <state width="1238" height="236" key="GridCell.Tab.1.center" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.1.center/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1581342551887" />
-    <state width="1238" height="236" key="GridCell.Tab.1.left" timestamp="1581342551886">
+    <state width="1238" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.1.left" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.1.left/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1581342551886" />
-    <state width="1238" height="236" key="GridCell.Tab.1.right" timestamp="1581342551887">
+    <state width="1238" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
+    <state width="1238" height="236" key="GridCell.Tab.1.right" timestamp="1582035243507">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1238" height="236" key="GridCell.Tab.1.right/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578674044406" />
-    <state width="1238" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1581342551887" />
+    <state width="1238" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1582035243507" />
     <state x="143" y="23" key="SettingsEditor" timestamp="1578646730330">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -189,6 +202,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="325" y="206" key="com.intellij.ide.util.TipDialog/0.0.1280.760/2560.0.1920.1160@0.0.1280.760" timestamp="1578647633611" />
+    <state x="6" y="0" key="new project wizard" timestamp="1582081450278">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1582081450278" />
     <state x="301" y="174" key="run.anything.popup" timestamp="1579411742934">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -1030,6 +1047,36 @@
           <url>file://$PROJECT_DIR$/src/code_132.java</url>
           <line>17</line>
           <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/code_154.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="304" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
