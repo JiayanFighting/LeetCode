@@ -12,28 +12,16 @@ public class code_66 {
 
     public static int[] plusOne(int[] digits) {
         int ex = 1;
-        String str = "";
         for(int i = digits.length-1;i>=0;i--){
-            if (digits[i] < 9){
-                
+            digits[i] ++;
+            digits[i] = digits[i] % 10;
+            if (digits[i] != 0){
+                return digits;
             }
-            int nex = digits[i] + ex;
-            if (nex > 9){
-                ex = 1;
-            }else {
-                ex = 0;
-            }
-            str = (nex%10)+ str;
         }
-        if (ex == 1){
-            str = ex+ str;
-        }
-
-        int[] res = new int[str.length()];
-        for (int i = 0;i<res.length;i++){
-            res[i] = str.charAt(i) - '0';
-        }
-        return res;
+        digits = new int[digits.length+1];
+        digits[0] = 1;
+        return digits;
     }
 
 

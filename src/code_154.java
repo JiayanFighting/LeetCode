@@ -10,9 +10,9 @@ public class code_154 {
         int left = 0, right = nums.length - 1;
         while (left < right) {
             int mid = (left + right) / 2;
-            if (nums[mid] > nums[right]) left = mid + 1;
-            else if (nums[mid] < nums[right]) right = mid;
-            else right = right - 1;
+            if (nums[mid] > nums[right]) left = mid + 1;//最小值一定在mid右边
+            else if (nums[mid] < nums[right]) right = mid; // 可能当前mid值就是最小值
+            else right = right - 1;//一定在中间 一步一步一定 不用轻举妄动
         }
         return nums[left];
     }

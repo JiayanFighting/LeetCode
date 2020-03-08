@@ -2,10 +2,13 @@ public class code_25 {
     public static void main(String [] args){
         ListNode head1 = new ListNode(1);
         head1.next = new ListNode(2);
-        head1.next.next = new ListNode(3);
-        head1.next.next.next = new ListNode(4);
-        head1.next.next.next.next = new ListNode(5);
-        int k =5;
+//        head1.next.next = new ListNode(3);
+//        head1.next.next.next = new ListNode(4);
+//        head1.next.next.next.next = new ListNode(5);
+//        head1.next.next.next.next.next = new ListNode(6);
+//        head1.next.next.next.next.next.next = new ListNode(7);
+//        head1.next.next.next.next.next.next.next = new ListNode(8);
+        int k =2;
         ListNode ret = reverseKGroup( head1,k);
         while (ret != null){
             System.out.println(ret.val);
@@ -14,49 +17,41 @@ public class code_25 {
     }
 
     public static ListNode reverseKGroup(ListNode head, int k) {
-        ListNode head2 = head;
-        ListNode ret = new ListNode(0) ;
-        int k2 = k;
-        while (head2 != null && k2>0){
-            ret.next = head2;
-            head2 = head2.next;
-            k2--;
+        if (k<=1 || head == null || head.next == null) return head;
+        ListNode preHead = new ListNode(0);
+        preHead.next = head;
+        ListNode pre = preHead,q = head;
+        // 每k个翻转 然后收尾指针同时往后移
+        //先走k步
+        int step = 1;
+        while (q !=null && step <=k){
+            q = q.next;
+            step ++;
         }
-        if (k2>0){
-            return head;
+        boolean next = true;
+        if (q == null && step <= k){
+            next = false;
         }
-
-
-        ListNode headpre = ret;
-        while (head != null && head.next!=null){
-            head = swapKNode(head,k);
-            headpre.next = head;
-            headpre = head.next;
-            head = head.next.next;
+        while (next){
+            // 翻转
+            ListNode p = pre.next;
+            while (p.next != q){
+                ListNode node = p.next;
+                p.next = node.next;
+                node.next = pre.next;
+                pre.next = node;
+            }
+            // 翻转完毕 pre,q 同时往后移k步
+            step = 1;
+            while (step <= k && q!=null){
+                q = q.next;
+                pre = pre.next;
+                step++;
+            }
+            if (q == null && step <= k){
+                next = false;
+            }
         }
-
-        return ret.next;
-    }
-
-    public static ListNode swapKNode(ListNode head,int k){
-        ListNode ret = new ListNode(0);
-        ret.next = head;
-        ListNode head2 = head;
-        int k2 = k;
-        while (head2 != null && k2>0){
-            head2 = head2.next;
-            k2--;
-        }
-        if (k2>0){
-            return head;
-        }
-        while (k > 1){
-            ListNode node = head.next;
-            head.next = node.next;
-            node.next = ret.next;
-            ret.next = node;
-            k--;
-        }
-        return ret.next;
+        return preHead.next;
     }
 }

@@ -6,7 +6,7 @@ public class code_164 {
     }
 
     public static int maximumGap(int[] nums){
-        if (nums.length <= 1) return 0;
+        if (nums.length < 2) return 0;
         return -1;
     }
 }

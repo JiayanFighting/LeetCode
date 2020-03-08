@@ -8,9 +8,13 @@ public class code_87 {
 
     public static  boolean isScramble(String s1, String s2) {
         if (s1.length() != s2.length()) return false;
-        //dp[i][j]表示到第i个字符与第j个pattern是否匹配
-        boolean[][] dp = new boolean[s1.length()+1][s2.length()+1];
+        if (s1.equals(s2)) return true;
 
-        return  dp[s1.length()][s2.length()];
+        for (int i = 0;i<s1.length();i++){
+            isScramble(s1.substring(0,i),s2.substring(0,i));
+        }
+        return false;
     }
+
+
 }

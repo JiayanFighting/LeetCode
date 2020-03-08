@@ -1,6 +1,6 @@
 public class code_34 {
     public static void main(String[] args){
-        int[] nums = {5,7,7,8};
+        int[] nums = {7,7,7,7,7,8};
         int target = 7;
         int[] ret = searchRange(nums,target);
         System.out.println(ret[0]+" " + ret[1]);
@@ -17,16 +17,36 @@ public class code_34 {
         while (left <= right){
             int mid = (left + right) / 2;
             if (nums[mid] == target){
-                left = mid + 1;
+                if (mid == 0 || nums[mid - 1] < target){
+                    ret[0] = mid;
+                    break;
+                }else{ // nums[mid - 1] = target
+                    right = mid-1;
+                }
             }else if (nums[mid] < target){
-                left = mid + 1;
-            }else if (nums[mid] > target){
-                right = mid - 1;
+                left = mid+1;
+            }else {
+                right = mid-1;
             }
         }
-
-        ret[0] = left;
-        ret[1] = right;
+        if (ret[0] == -1) return ret;
+        left = ret[0];
+        right = nums.length -1;
+        while (left <= right){
+            int mid = (left + right) / 2;
+            if (nums[mid] == target){
+                if (mid == nums.length-1 || nums[mid + 1] > target){
+                    ret[1] = mid;
+                    break;
+                }else{ // nums[mid + 1] = target
+                    left = mid + 1;
+                }
+            }else if (nums[mid] < target){
+                left = mid+1;
+            }else {
+                right = mid-1;
+            }
+        }
         return ret;
     }
 
