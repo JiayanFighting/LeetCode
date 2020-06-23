@@ -1,6 +1,5 @@
 public class code_43 {
     public static void main(String[] args){
-
         String num2 = "9999999999999";
         String num1 = "0";
         System.out.println(multiply(num1,num2));

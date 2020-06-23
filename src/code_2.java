@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class code_2 {
     public static void main(String[] args){
@@ -10,10 +8,40 @@ public class code_2 {
         //l2.next = new ListNode(6);
         //l2.next.next = new ListNode(4);
         ListNode result = addTwoNumbers(l1, l2);
-        System.out.println("");
+        while (result != null) {
+            System.out.println(result.val+" ");
+            result = result.next;
+        }
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carry = 0;
+        ListNode res = new ListNode(0);
+        ListNode node = res;
+        while (l1 !=null || l2 != null) {
+            if (l1 == null) {
+                node.next = new ListNode((l2.val + carry) % 10);
+                carry = (l2.val + carry) / 10;
+                l2 = l2.next;
+            }else if (l2 == null) {
+                node.next = new ListNode((l1.val + carry) % 10);
+                carry = (l1.val + carry) / 10;
+                l1 = l1.next;
+            }else {
+                node.next = new ListNode((l1.val + l2.val + carry) % 10);
+                carry = (l1.val + l2.val + carry) / 10;
+                l1 = l1.next;
+                l2 = l2.next;
+            }
+            node = node.next;
+        }
+        if (carry > 0) {
+            node.next = new ListNode(carry);
+        }
+        return res.next;
+    }
+
+    public static ListNode addTwoNumbers_1(ListNode l1, ListNode l2) {
         ListNode result_2 = new ListNode(0);
         ListNode result = result_2;
         int add = 0 , v = 0,v1=0,v2=0;

@@ -1,40 +1,63 @@
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args){
-        HashMap<String,String> map = new HashMap<>();
-        map.put("k1","v1");
-        map.put("k2","v2");
-        map.put("k4","v4");
-        map.put("k3","v3");
-        map.put("k6","v6");
-        map.put("k5","v5");
-        ergodicHashmap(map);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String[] sList = new String[n];
+        for (int i = 0;i<n;i++){
+            sList[i] = sc.next();
+        }
+        String[] ret = getResult(n,sList);
+        for (String s :ret){
+            System.out.println(s);
+        }
     }
 
-    public static void ergodicHashmap(HashMap<String,String> map){
-        //第一种：普通使用，二次取值(性能差)
-        for(String key:map.keySet()){
-            System.out.println("Key: "+key+" Value: "+map.get(key));
+    public static String[] getResult(int n,String[] sList){
+        for (int i = 0;i<n;i++){
+            sList[i] = check(sList[i]);
         }
+        return sList;
+    }
 
-        //第二种(性能比第一种好，一次取值)
-        Iterator map1it=map.entrySet().iterator();
-        while(map1it.hasNext()) {
-            Map.Entry<String, String> entry=(Map.Entry<String, String>) map1it.next();
-            System.out.println("Key: "+entry.getKey()+" Value: "+entry.getValue());
+    public static String check(String s){
+        if (s.length() <= 2) return s;
+        StringBuilder sb = new StringBuilder();
+//        sb.append(s.charAt(0));
+        int last = 0;
+        int num = 1;
+        for (int i = 1;i<s.length();i++){
+            if (s.charAt(i) == s.charAt(i-1)){
+                num ++;
+            }else { // 与前面的不同，需要判断
+                int tmp = num;
+                if (last == 2 && num >= 2){//aabb
+                    sb.append(s.charAt(i-1)); // 只保留一个
+                    tmp = 1;
+                }else if (num >= 3){//aaa
+                    sb.append(s, i-2, i);
+                    tmp = 2;
+                }else {
+                    sb.append(s,i-num,i);
+                }
+                num = 1;
+                last = tmp;
+            }
         }
+        int tmp = num;
+        if (last == 2 && num >= 2){//aabb
+            sb.append(s.charAt(s.length()-1)); // 只保留一个
+            tmp = 1;
+        }else if (num == 3){//aaa
+            sb.append(s, s.length()-2, s.length());
+            tmp = 2;
+        }else {
+            sb.append(s,s.length()-num,s.length());
+        }
+        num = 1;
+        last = tmp;
 
-        //第三种：推荐，尤其是容量大时
-        for(Map.Entry<String, String> entry: map.entrySet()) {
-            System.out.println("Key: "+ entry.getKey()+ " Value: "+entry.getValue());
-        }
-
-        // 第四种
-        for(String v:map.values()) {
-            System.out.println("The value is "+v);
-        }
+        return sb.toString();
     }
 }
