@@ -1,14 +1,33 @@
-import java.lang.reflect.Array;
 
 public class code_4 {
     public static void main(String[] args){
-        int[] nums1 = {1,3,4};
-        int[] nums2 = {7,8,9};
+        int[] nums1 = {1,2,3,7,8};
+        int[] nums2 = {4,5,6};
         double result = findMedianSortedArrays(nums1,nums2);
         System.out.println(result);
     }
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
+        int left1 = 0,right1= nums1.length-1;
+        int left2 = 0,right2= nums2.length-1;
+
+        while (left1 < right1) {
+            int mid1 = (left1+right1)/2;
+            int mid2 = (left2+right2)/2;
+            if (nums1[mid1] < nums2[mid2]) {
+                left1 = mid1+1;
+                right2 = mid2-1;
+            }else {
+                left2 = mid2+1;
+                right1 = mid1-1;
+            }
+        }
+
+        return 0;
+    }
+
+    public static double findMedianSortedArrays_1(int[] nums1, int[] nums2) {
         double result = 0;
         int len = nums1.length + nums2.length;
         int left = -1,right = -1;

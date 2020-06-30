@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df0a0af2-a5c8-429a-b023-79f039d76558" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/azureSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_171.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_171.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code_43.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_43.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.code_2">
+  <component name="RunManager" selected="Application.code_5">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="leetcode_1" />
@@ -64,20 +65,6 @@
     </configuration>
     <configuration name="code_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="code_1" />
-      <module name="leetcode_1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="code_155" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code_155" />
-      <module name="leetcode_1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="code_168" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code_168" />
       <module name="leetcode_1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,13 +84,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="code_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code_3" />
+      <module name="leetcode_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code_5" />
+      <module name="leetcode_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.code_5" />
+        <item itemvalue="Application.code_3" />
         <item itemvalue="Application.code_2" />
         <item itemvalue="Application.code_1" />
         <item itemvalue="Application.code_171" />
-        <item itemvalue="Application.code_168" />
-        <item itemvalue="Application.code_155" />
       </list>
     </recent_temporary>
   </component>
@@ -155,38 +156,38 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1592114611363" />
-    <state width="619" height="236" key="GridCell.Tab.0.bottom" timestamp="1592922158228">
+    <state width="619" height="189" key="GridCell.Tab.0.bottom" timestamp="1593007629999">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.0.center" timestamp="1592922158228">
+    <state width="619" height="189" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1593007629999" />
+    <state width="619" height="189" key="GridCell.Tab.0.center" timestamp="1593007629999">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.0.left" timestamp="1592922158228">
+    <state width="619" height="189" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1593007629999" />
+    <state width="619" height="189" key="GridCell.Tab.0.left" timestamp="1593007629999">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.0.right" timestamp="1592922158228">
+    <state width="619" height="189" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1593007629999" />
+    <state width="619" height="189" key="GridCell.Tab.0.right" timestamp="1593007629999">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.1.bottom" timestamp="1592922158228">
+    <state width="619" height="189" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1593007629999" />
+    <state width="619" height="236" key="GridCell.Tab.1.bottom" timestamp="1592926715837">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.1.center" timestamp="1592922158228">
+    <state width="619" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1592926715837" />
+    <state width="619" height="236" key="GridCell.Tab.1.center" timestamp="1592926715837">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.1.left" timestamp="1592922158228">
+    <state width="619" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1592926715837" />
+    <state width="619" height="236" key="GridCell.Tab.1.left" timestamp="1592926715837">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
-    <state width="619" height="236" key="GridCell.Tab.1.right" timestamp="1592922158228">
+    <state width="619" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1592926715837" />
+    <state width="619" height="236" key="GridCell.Tab.1.right" timestamp="1592926715837">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="619" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1592922158228" />
+    <state width="619" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1592926715837" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -198,12 +199,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_5.java</url>
-          <line>28</line>
+          <line>52</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_4.java</url>
-          <line>25</line>
+          <line>44</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -223,22 +224,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_4.java</url>
-          <line>26</line>
+          <line>45</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_4.java</url>
-          <line>16</line>
+          <line>35</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_4.java</url>
-          <line>22</line>
+          <line>41</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_4.java</url>
-          <line>19</line>
+          <line>38</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -433,7 +434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_3.java</url>
-          <line>14</line>
+          <line>28</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
