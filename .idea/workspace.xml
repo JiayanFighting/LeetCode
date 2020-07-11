@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df0a0af2-a5c8-429a-b023-79f039d76558" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode_1/code_9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode_1/code_9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code_9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../microsoft/React/Statusly" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
@@ -150,10 +145,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1592114611363">
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1594453618515">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1592114611363" />
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1594453618515" />
     <state width="619" height="236" key="GridCell.Tab.0.bottom" timestamp="1593878857024">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -492,7 +487,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code_15.java</url>
-          <line>82</line>
+          <line>79</line>
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
