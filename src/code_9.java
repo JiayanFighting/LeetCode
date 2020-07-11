@@ -1,20 +1,20 @@
 public class code_9 {
     public static void main(String[] args){
-        int x = 12344321;
+        int x = 100;
         boolean result = isPalindrome(x);
         System.out.println(result);
     }
 
     public static boolean isPalindrome(int x) {
-        if (x < 0) {
+        if (x <  0 || (x != 0 && x % 10 == 0)) {
             return false;
         }
-        int num = 0;
-        while (x>num){
-            num = num*10 + x%10;
-            x = x/10;
+        int y = 0;
+        while (y < x) {
+            y = y*10+x % 10;
+            x = x / 10;
         }
-        return x == num || x == num/10;
+        return x == y || x == y/10;
     }
 
     // 转换为字符串 再判断是否是回文字符串
