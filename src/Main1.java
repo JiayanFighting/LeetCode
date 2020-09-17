@@ -1,63 +1,77 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main1 {
+    public static int maxCount = 0;
     public static void main(String[] args) {
-        HashMap<Integer,String> map = new HashMap<>();
-        map.put(0,"0000");
-        map.put(1,"0001");
-        map.put(2,"0010");
-        map.put(3,"0011");
-        map.put(4,"0100");
-        map.put(5,"0101");
-        map.put(6,"0110");
-        map.put(7,"0111");
-        map.put(8,"1000");
-        map.put(9,"1001");
-        Scanner sc = new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
+        String sBoy = sc.nextLine();
+        String[] sBoys = sBoy.split(" ");
+        HashSet<Integer> boys = new HashSet<>();
+        int[] boyss = new int[sBoys.length];
+        boolean[] rboy = new boolean[sBoy.length()];
+        HashMap<Integer,Integer> boymap = new HashMap<>();
+        int index = 0;
+        for (String boy:sBoys){
+            boys.add(Integer.parseInt(boy));
+            boyss[index] = Integer.parseInt(boy);
+            boymap.put(Integer.parseInt(boy),index);
+            index++;
+        }
+        String sGirl = sc.nextLine();
+        String[] sGirls = sGirl.split(" ");
+        HashSet<Integer> girls = new HashSet<>();
+        int[] girlss = new int[sBoys.length];
+        boolean[] rgirl = new boolean[sGirl.length()];
+        HashMap<Integer,Integer> girlmap = new HashMap<>();
+        index = 0;
+        for (String girl:sGirls){
+            girls.add(Integer.parseInt(girl));
+            girlss[index] = Integer.parseInt(girl);
+            girlmap.put(Integer.parseInt(girl),index);
+            index++;
+        }
         int n = sc.nextInt();
-        int[] nums = new int[n];
+        HashMap<Integer,HashSet<Integer>> map = new HashMap<>();
+
         for (int i = 0;i<n;i++){
-            nums[i] = sc.nextInt();
-        }
-        getNewCode(nums,map);
-
-    }
-
-    public static void getNewCode(int[] nums,HashMap<Integer,String> map){
-        for (int num:nums){
-            String s = toBinary(num,map);
-            String res = revert(s);
-            System.out.println(res);
-        }
-    }
-
-
-    public static String revert(String s){
-        boolean flag = true;
-        StringBuilder sb = new StringBuilder();
-        for (int i = s.length()-1; i>=0; i--){
-            if (flag && s.charAt(i) == '0'){
-                continue;
+            int boy = sc.nextInt();
+            int girl = sc.nextInt();
+            if (map.containsKey(boy)){
+                HashSet<Integer> set = map.get(boy);
+                set.add(girl);
+                map.put(boy,new HashSet<>(set));
+            }else{
+                HashSet<Integer> set = new HashSet<>();
+                set.add(girl);
+                map.put(boy,set);
             }
-            sb.append(s.charAt(i));
-            flag = false;
         }
-        return sb.toString();
+        helper2(0,boyss,rboy,girlss,rgirl,map,girlmap,boymap);
+        System.out.println(maxCount);
     }
-    public static String toBinary(int num,HashMap<Integer,String> map){
-        String res = "";
-        int count = 0;
-        while (num > 0){
-            int x = num % 10;
-            res = map.get(x)+res;
-            count++;
-            num = num/10;
+
+    public static void helper2(int count,int[] boys,boolean[] rboy, int[] girls,boolean[] rgirl,HashMap<Integer,HashSet<Integer>> map,HashMap<Integer,Integer> girlmap,HashMap<Integer,Integer> boymap) {
+        for (int i = 0;i<boys.length;i++){
+            int boy = boymap.get(boys[i]);
+            if (!rboy[boy]){
+                for (int girl:map.get(boys[i])) {
+                    int girlindex = girlmap.get(girl);
+                    if (!rgirl[girlindex]){
+                        rboy[boy] = true;
+                        rgirl[girlindex] = true;
+                        count ++;
+                        helper2(count,boys,rboy,girls,rgirl,map,girlmap,boymap);
+                        count--;
+                        rboy[boy] = false;
+                        rgirl[girlindex] = false;
+                    }
+                }
+            }
         }
-        while (count < 3){
-            res = map.get(0)+res;
-            count++;
-        }
-        return res;
+        maxCount = Math.max(count,maxCount);
     }
+
+
 }

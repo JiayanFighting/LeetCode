@@ -1,48 +1,76 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int s = sc.nextInt();
+        int n = sc.nextInt();
         int m = sc.nextInt();
-        getResult(s,m);
+        int[] nums = new int[m];
+        for (int i=0;i<m;i++){
+            nums[i] = sc.nextInt();
+        }
+        System.out.println(getResult2(n,m,nums));
     }
 
-    public static void getResult(int s,int m) {
-        double pro = 0;
-        double min = s;
-        double max = s;
-        int lastmaxnum = 1;
-        int maxleft = 1;
-        int count = 0;
-        while (pro < m && max > 1){
-            double[] d = getMaxValue(max);
-            count ++;
-            pro += d[1];
-            maxleft --;
-            min = Math.min(min,d[0]);
-            if (maxleft <= 0){
-                maxleft = lastmaxnum*2;
-                lastmaxnum = maxleft;
-                max = min;
+    public static int getResult(int n,int m,int[] nums){
+        if (nums[0] == 1){
+            return n;
+        }
+        Arrays.sort(nums);
+        HashSet<Integer> set = new HashSet<>();
+        int multi = 1;
+        while (multi*nums[0]<= n){
+            for (int num:nums) {
+                if (num * multi <= n){
+                    set.add(num*multi);
+                }
             }
+            multi++;
+        }
+        return set.size();
+    }
+
+    public static int getResult2(int n,int m,int[] nums){
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0;i<nums.length;i++){
+            int num = n/ nums[i];
+            for (int j =1;j<=num;j++){
+                set.add(j*nums[i]);
+            }
+        }
+        return set.size();
+    }
+
+    public static int getResult3(int n,int m,int[] nums){
+        int count = 0;
+        Arrays.sort(nums);
+        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int i=nums.length-1;i>=0;i--){
+            list.add(nums[i]);
+            for (int j = 0;j<i;j++){
+                if (nums[i]%nums[j] == 0){
+                    list.remove(list.size()-1);
+                    break;
+                }
+            }
+        }
+
+        for (int i = 0;i<nums.length;i++){
+            int num = n/ nums[i];
+            count+=num;
+        }
+
+        for (int i =0;i<nums.length;i++){
 
         }
-        if (pro < m){
-            System.out.println(-1);
-        }else {
-            System.out.println(count);
-        }
+
+
+        return set.size();
     }
 
-    public static void helper(){
 
-    }
-
-    public static double[] getMaxValue(double k){
-        double[] res = new double[2];
-        res[0] =  k/2;
-        res[1] = k*k/4;
-        return res;
-    }
 }
+
+
